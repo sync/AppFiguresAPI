@@ -7,16 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11AB7EC148C8173009474B7 /* APArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB7EA148C8173009474B7 /* APArchive.h */; };
+		A11AB7ED148C8173009474B7 /* APArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB7EB148C8173009474B7 /* APArchive.m */; };
+		A11AB7F1148C8347009474B7 /* APArchiveTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB7EF148C8347009474B7 /* APArchiveTransaction.h */; };
+		A11AB7F2148C8347009474B7 /* APArchiveTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB7F0148C8347009474B7 /* APArchiveTransaction.m */; };
+		A11AB7F6148C8807009474B7 /* APEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB7F4148C8807009474B7 /* APEvent.h */; };
+		A11AB7F7148C8807009474B7 /* APEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB7F5148C8807009474B7 /* APEvent.m */; };
+		A11AB7FB148C89FC009474B7 /* APEventTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB7F9148C89FC009474B7 /* APEventTransaction.h */; };
+		A11AB7FC148C89FC009474B7 /* APEventTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB7FA148C89FC009474B7 /* APEventTransaction.m */; };
+		A11AB804148C9214009474B7 /* APUser.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB802148C9214009474B7 /* APUser.h */; };
+		A11AB805148C9214009474B7 /* APUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB803148C9214009474B7 /* APUser.m */; };
+		A11AB808148C92BF009474B7 /* APAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB806148C92BF009474B7 /* APAccount.h */; };
+		A11AB809148C92BF009474B7 /* APAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB807148C92BF009474B7 /* APAccount.m */; };
+		A11AB80D148C9552009474B7 /* APUserTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB80B148C9552009474B7 /* APUserTransaction.h */; };
+		A11AB80E148C9552009474B7 /* APUserTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB80C148C9552009474B7 /* APUserTransaction.m */; };
+		A11AB811148C963E009474B7 /* APExternalAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB80F148C963E009474B7 /* APExternalAccount.h */; };
+		A11AB812148C963E009474B7 /* APExternalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB810148C963E009474B7 /* APExternalAccount.m */; };
+		A11AB816148C9B3C009474B7 /* APExternalAccountTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A11AB814148C9B3C009474B7 /* APExternalAccountTransaction.h */; };
+		A11AB817148C9B3C009474B7 /* APExternalAccountTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A11AB815148C9B3C009474B7 /* APExternalAccountTransaction.m */; };
 		A13F2C741484A7BD00F71B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F2C731484A7BD00F71B2F /* Foundation.framework */; };
 		A13F2C7A1484A7BD00F71B2F /* AppFiguresAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C791484A7BD00F71B2F /* AppFiguresAPI.m */; };
+		A13F2C811484A7E600F71B2F /* APConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C801484A7E600F71B2F /* APConstants.h */; };
+		A13F2C861484A8B800F71B2F /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C841484A8B800F71B2F /* JSONKit.h */; };
+		A13F2C871484A8B800F71B2F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C851484A8B800F71B2F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A13F2C8F1484AA2C00F71B2F /* APDateRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C8D1484AA2C00F71B2F /* APDateRange.h */; };
+		A13F2C901484AA2C00F71B2F /* APDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C8E1484AA2C00F71B2F /* APDateRange.m */; };
+		A13F2C931484ADF000F71B2F /* APRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C911484ADF000F71B2F /* APRequest.h */; };
+		A13F2C941484ADF000F71B2F /* APRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C921484ADF000F71B2F /* APRequest.m */; };
+		A13F2C9C1484BAA300F71B2F /* APSalesReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C9A1484BAA300F71B2F /* APSalesReport.h */; };
+		A13F2C9D1484BAA300F71B2F /* APSalesReport.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C9B1484BAA300F71B2F /* APSalesReport.m */; };
+		A13F2CA11484BF8300F71B2F /* APProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C9F1484BF8300F71B2F /* APProduct.h */; };
+		A13F2CA21484BF8300F71B2F /* APProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2CA01484BF8300F71B2F /* APProduct.m */; };
+		A162D279148B48DE003884B8 /* APReview.h in Headers */ = {isa = PBXBuildFile; fileRef = A162D277148B48DE003884B8 /* APReview.h */; };
+		A162D27A148B48DE003884B8 /* APReview.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D278148B48DE003884B8 /* APReview.m */; };
+		A162D27D148B4E89003884B8 /* APStoreRating.h in Headers */ = {isa = PBXBuildFile; fileRef = A162D27B148B4E89003884B8 /* APStoreRating.h */; };
+		A162D27E148B4E89003884B8 /* APStoreRating.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D27C148B4E89003884B8 /* APStoreRating.m */; };
+		A162D282148B5193003884B8 /* APReviewTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A162D280148B5193003884B8 /* APReviewTransaction.h */; };
+		A162D283148B5193003884B8 /* APReviewTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D281148B5193003884B8 /* APReviewTransaction.m */; };
+		A162D287148B5B52003884B8 /* APiAdReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A162D285148B5B52003884B8 /* APiAdReport.h */; };
+		A162D288148B5B52003884B8 /* APiAdReport.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D286148B5B52003884B8 /* APiAdReport.m */; };
+		A162D28C148B5CAB003884B8 /* APiAdTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A162D28A148B5CAB003884B8 /* APiAdTransaction.h */; };
+		A162D28D148B5CAB003884B8 /* APiAdTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A162D28B148B5CAB003884B8 /* APiAdTransaction.m */; };
+		A16EF7E51485900E00A90921 /* APSalesTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF7E31485900E00A90921 /* APSalesTransaction.h */; };
+		A16EF7E61485900E00A90921 /* APSalesTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF7E41485900E00A90921 /* APSalesTransaction.m */; };
+		A16EF7EB1485904700A90921 /* APTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF7E91485904700A90921 /* APTransaction.h */; };
+		A16EF7EC1485904700A90921 /* APTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF7EA1485904700A90921 /* APTransaction.m */; };
+		A16EF7F214859E1C00A90921 /* APAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF7F014859E1C00A90921 /* APAuthentication.h */; };
+		A16EF7F314859E1C00A90921 /* APAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF7F114859E1C00A90921 /* APAuthentication.m */; };
+		A16EF7F61485EE0A00A90921 /* APRegionSalesReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF7F41485EE0A00A90921 /* APRegionSalesReport.h */; };
+		A16EF7F71485EE0A00A90921 /* APRegionSalesReport.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF7F51485EE0A00A90921 /* APRegionSalesReport.m */; };
+		A16EF7FE1485EFCB00A90921 /* APRankData.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF7FC1485EFCB00A90921 /* APRankData.h */; };
+		A16EF7FF1485EFCB00A90921 /* APRankData.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF7FD1485EFCB00A90921 /* APRankData.m */; };
+		A16EF8041485F0C900A90921 /* APRankTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A16EF8021485F0C900A90921 /* APRankTransaction.h */; };
+		A16EF8051485F0C900A90921 /* APRankTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A16EF8031485F0C900A90921 /* APRankTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A11AB7EA148C8173009474B7 /* APArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APArchive.h; sourceTree = "<group>"; };
+		A11AB7EB148C8173009474B7 /* APArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APArchive.m; sourceTree = "<group>"; };
+		A11AB7EF148C8347009474B7 /* APArchiveTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APArchiveTransaction.h; sourceTree = "<group>"; };
+		A11AB7F0148C8347009474B7 /* APArchiveTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APArchiveTransaction.m; sourceTree = "<group>"; };
+		A11AB7F4148C8807009474B7 /* APEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEvent.h; sourceTree = "<group>"; };
+		A11AB7F5148C8807009474B7 /* APEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEvent.m; sourceTree = "<group>"; };
+		A11AB7F9148C89FC009474B7 /* APEventTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEventTransaction.h; sourceTree = "<group>"; };
+		A11AB7FA148C89FC009474B7 /* APEventTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEventTransaction.m; sourceTree = "<group>"; };
+		A11AB802148C9214009474B7 /* APUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APUser.h; path = AppFiguresAPI/APUser.h; sourceTree = "<group>"; };
+		A11AB803148C9214009474B7 /* APUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APUser.m; path = AppFiguresAPI/APUser.m; sourceTree = "<group>"; };
+		A11AB806148C92BF009474B7 /* APAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAccount.h; sourceTree = "<group>"; };
+		A11AB807148C92BF009474B7 /* APAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAccount.m; sourceTree = "<group>"; };
+		A11AB80B148C9552009474B7 /* APUserTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APUserTransaction.h; sourceTree = "<group>"; };
+		A11AB80C148C9552009474B7 /* APUserTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APUserTransaction.m; sourceTree = "<group>"; };
+		A11AB80F148C963E009474B7 /* APExternalAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APExternalAccount.h; sourceTree = "<group>"; };
+		A11AB810148C963E009474B7 /* APExternalAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APExternalAccount.m; sourceTree = "<group>"; };
+		A11AB814148C9B3C009474B7 /* APExternalAccountTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APExternalAccountTransaction.h; sourceTree = "<group>"; };
+		A11AB815148C9B3C009474B7 /* APExternalAccountTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APExternalAccountTransaction.m; sourceTree = "<group>"; };
 		A13F2C701484A7BD00F71B2F /* libAppFiguresAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppFiguresAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13F2C731484A7BD00F71B2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A13F2C771484A7BD00F71B2F /* AppFiguresAPI-Prefix.pch */ = {isa = PBXFileReference; path = "AppFiguresAPI-Prefix.pch"; sourceTree = "<group>"; };
-		A13F2C781484A7BD00F71B2F /* AppFiguresAPI.h */ = {isa = PBXFileReference; path = AppFiguresAPI.h; sourceTree = "<group>"; };
+		A13F2C771484A7BD00F71B2F /* AppFiguresAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppFiguresAPI-Prefix.pch"; sourceTree = "<group>"; };
+		A13F2C781484A7BD00F71B2F /* AppFiguresAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFiguresAPI.h; sourceTree = "<group>"; };
 		A13F2C791484A7BD00F71B2F /* AppFiguresAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFiguresAPI.m; sourceTree = "<group>"; };
+		A13F2C801484A7E600F71B2F /* APConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APConstants.h; sourceTree = "<group>"; };
+		A13F2C841484A8B800F71B2F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = lib/JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		A13F2C851484A8B800F71B2F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = lib/JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+		A13F2C8D1484AA2C00F71B2F /* APDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDateRange.h; sourceTree = "<group>"; };
+		A13F2C8E1484AA2C00F71B2F /* APDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDateRange.m; sourceTree = "<group>"; };
+		A13F2C911484ADF000F71B2F /* APRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRequest.h; sourceTree = "<group>"; };
+		A13F2C921484ADF000F71B2F /* APRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRequest.m; sourceTree = "<group>"; };
+		A13F2C9A1484BAA300F71B2F /* APSalesReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSalesReport.h; sourceTree = "<group>"; };
+		A13F2C9B1484BAA300F71B2F /* APSalesReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSalesReport.m; sourceTree = "<group>"; };
+		A13F2C9F1484BF8300F71B2F /* APProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APProduct.h; sourceTree = "<group>"; };
+		A13F2CA01484BF8300F71B2F /* APProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APProduct.m; sourceTree = "<group>"; };
+		A162D277148B48DE003884B8 /* APReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReview.h; sourceTree = "<group>"; };
+		A162D278148B48DE003884B8 /* APReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReview.m; sourceTree = "<group>"; };
+		A162D27B148B4E89003884B8 /* APStoreRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APStoreRating.h; sourceTree = "<group>"; };
+		A162D27C148B4E89003884B8 /* APStoreRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APStoreRating.m; sourceTree = "<group>"; };
+		A162D280148B5193003884B8 /* APReviewTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReviewTransaction.h; sourceTree = "<group>"; };
+		A162D281148B5193003884B8 /* APReviewTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReviewTransaction.m; sourceTree = "<group>"; };
+		A162D285148B5B52003884B8 /* APiAdReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APiAdReport.h; sourceTree = "<group>"; };
+		A162D286148B5B52003884B8 /* APiAdReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APiAdReport.m; sourceTree = "<group>"; };
+		A162D28A148B5CAB003884B8 /* APiAdTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APiAdTransaction.h; sourceTree = "<group>"; };
+		A162D28B148B5CAB003884B8 /* APiAdTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APiAdTransaction.m; sourceTree = "<group>"; };
+		A16EF7E31485900E00A90921 /* APSalesTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSalesTransaction.h; sourceTree = "<group>"; };
+		A16EF7E41485900E00A90921 /* APSalesTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSalesTransaction.m; sourceTree = "<group>"; };
+		A16EF7E91485904700A90921 /* APTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTransaction.h; sourceTree = "<group>"; };
+		A16EF7EA1485904700A90921 /* APTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTransaction.m; sourceTree = "<group>"; };
+		A16EF7F014859E1C00A90921 /* APAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAuthentication.h; sourceTree = "<group>"; };
+		A16EF7F114859E1C00A90921 /* APAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAuthentication.m; sourceTree = "<group>"; };
+		A16EF7F41485EE0A00A90921 /* APRegionSalesReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegionSalesReport.h; sourceTree = "<group>"; };
+		A16EF7F51485EE0A00A90921 /* APRegionSalesReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRegionSalesReport.m; sourceTree = "<group>"; };
+		A16EF7FC1485EFCB00A90921 /* APRankData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRankData.h; sourceTree = "<group>"; };
+		A16EF7FD1485EFCB00A90921 /* APRankData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRankData.m; sourceTree = "<group>"; };
+		A16EF8021485F0C900A90921 /* APRankTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRankTransaction.h; sourceTree = "<group>"; };
+		A16EF8031485F0C900A90921 /* APRankTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRankTransaction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +133,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A11AB7E8148C815C009474B7 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB7EA148C8173009474B7 /* APArchive.h */,
+				A11AB7EB148C8173009474B7 /* APArchive.m */,
+			);
+			name = Archive;
+			sourceTree = "<group>";
+		};
+		A11AB7EE148C8332009474B7 /* Archives */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB7EF148C8347009474B7 /* APArchiveTransaction.h */,
+				A11AB7F0148C8347009474B7 /* APArchiveTransaction.m */,
+			);
+			name = Archives;
+			sourceTree = "<group>";
+		};
+		A11AB7F3148C87FB009474B7 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB7F4148C8807009474B7 /* APEvent.h */,
+				A11AB7F5148C8807009474B7 /* APEvent.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		A11AB7F8148C89EF009474B7 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB7F9148C89FC009474B7 /* APEventTransaction.h */,
+				A11AB7FA148C89FC009474B7 /* APEventTransaction.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		A11AB7FD148C91EF009474B7 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2C9E1484BF7400F71B2F /* Products */,
+				A11AB802148C9214009474B7 /* APUser.h */,
+				A11AB803148C9214009474B7 /* APUser.m */,
+				A11AB806148C92BF009474B7 /* APAccount.h */,
+				A11AB807148C92BF009474B7 /* APAccount.m */,
+				A11AB80F148C963E009474B7 /* APExternalAccount.h */,
+				A11AB810148C963E009474B7 /* APExternalAccount.m */,
+			);
+			name = Users;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A11AB80A148C9544009474B7 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB80B148C9552009474B7 /* APUserTransaction.h */,
+				A11AB80C148C9552009474B7 /* APUserTransaction.m */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		A11AB813148C9ADE009474B7 /* External Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB814148C9B3C009474B7 /* APExternalAccountTransaction.h */,
+				A11AB815148C9B3C009474B7 /* APExternalAccountTransaction.m */,
+			);
+			name = "External Accounts";
+			sourceTree = "<group>";
+		};
 		A13F2C651484A7BD00F71B2F = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +230,19 @@
 		A13F2C751484A7BD00F71B2F /* AppFiguresAPI */ = {
 			isa = PBXGroup;
 			children = (
+				A11AB7FD148C91EF009474B7 /* Users */,
+				A11AB7F3148C87FB009474B7 /* Events */,
+				A11AB7E8148C815C009474B7 /* Archive */,
+				A162D284148B5B2A003884B8 /* iAds */,
+				A162D275148B48C8003884B8 /* Ratings + Reviews */,
+				A16EF7F81485EF6600A90921 /* Ranks */,
+				A16EF7E81485903C00A90921 /* Transaction */,
+				A13F2C991484BA9100F71B2F /* Sales */,
+				A13F2C821484A84200F71B2F /* Networking */,
 				A13F2C781484A7BD00F71B2F /* AppFiguresAPI.h */,
 				A13F2C791484A7BD00F71B2F /* AppFiguresAPI.m */,
+				A13F2C8D1484AA2C00F71B2F /* APDateRange.h */,
+				A13F2C8E1484AA2C00F71B2F /* APDateRange.m */,
 				A13F2C761484A7BD00F71B2F /* Supporting Files */,
 			);
 			path = AppFiguresAPI;
@@ -69,9 +251,134 @@
 		A13F2C761484A7BD00F71B2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A13F2C801484A7E600F71B2F /* APConstants.h */,
 				A13F2C771484A7BD00F71B2F /* AppFiguresAPI-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A13F2C821484A84200F71B2F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2C831484A8B000F71B2F /* JSONKit */,
+				A13F2C911484ADF000F71B2F /* APRequest.h */,
+				A13F2C921484ADF000F71B2F /* APRequest.m */,
+				A16EF7F014859E1C00A90921 /* APAuthentication.h */,
+				A16EF7F114859E1C00A90921 /* APAuthentication.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A13F2C831484A8B000F71B2F /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2C841484A8B800F71B2F /* JSONKit.h */,
+				A13F2C851484A8B800F71B2F /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		A13F2C991484BA9100F71B2F /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2C9A1484BAA300F71B2F /* APSalesReport.h */,
+				A13F2C9B1484BAA300F71B2F /* APSalesReport.m */,
+				A16EF7F41485EE0A00A90921 /* APRegionSalesReport.h */,
+				A16EF7F51485EE0A00A90921 /* APRegionSalesReport.m */,
+			);
+			name = Sales;
+			sourceTree = "<group>";
+		};
+		A13F2C9E1484BF7400F71B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A13F2C9F1484BF8300F71B2F /* APProduct.h */,
+				A13F2CA01484BF8300F71B2F /* APProduct.m */,
+			);
+			name = Products;
+			path = AppFiguresAPI;
+			sourceTree = "<group>";
+		};
+		A162D275148B48C8003884B8 /* Ratings + Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				A162D277148B48DE003884B8 /* APReview.h */,
+				A162D278148B48DE003884B8 /* APReview.m */,
+				A162D27B148B4E89003884B8 /* APStoreRating.h */,
+				A162D27C148B4E89003884B8 /* APStoreRating.m */,
+			);
+			name = "Ratings + Reviews";
+			sourceTree = "<group>";
+		};
+		A162D27F148B517C003884B8 /* Ratings + Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				A162D280148B5193003884B8 /* APReviewTransaction.h */,
+				A162D281148B5193003884B8 /* APReviewTransaction.m */,
+			);
+			name = "Ratings + Reviews";
+			sourceTree = "<group>";
+		};
+		A162D284148B5B2A003884B8 /* iAds */ = {
+			isa = PBXGroup;
+			children = (
+				A162D285148B5B52003884B8 /* APiAdReport.h */,
+				A162D286148B5B52003884B8 /* APiAdReport.m */,
+			);
+			name = iAds;
+			sourceTree = "<group>";
+		};
+		A162D289148B5C94003884B8 /* iAds */ = {
+			isa = PBXGroup;
+			children = (
+				A162D28A148B5CAB003884B8 /* APiAdTransaction.h */,
+				A162D28B148B5CAB003884B8 /* APiAdTransaction.m */,
+			);
+			name = iAds;
+			sourceTree = "<group>";
+		};
+		A16EF7E81485903C00A90921 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				A11AB813148C9ADE009474B7 /* External Accounts */,
+				A11AB80A148C9544009474B7 /* Users */,
+				A11AB7F8148C89EF009474B7 /* Events */,
+				A11AB7EE148C8332009474B7 /* Archives */,
+				A162D289148B5C94003884B8 /* iAds */,
+				A162D27F148B517C003884B8 /* Ratings + Reviews */,
+				A16EF8011485F0B900A90921 /* Ranks */,
+				A16EF7ED1485909900A90921 /* Sales */,
+				A16EF7E91485904700A90921 /* APTransaction.h */,
+				A16EF7EA1485904700A90921 /* APTransaction.m */,
+			);
+			name = Transaction;
+			sourceTree = "<group>";
+		};
+		A16EF7ED1485909900A90921 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				A16EF7E31485900E00A90921 /* APSalesTransaction.h */,
+				A16EF7E41485900E00A90921 /* APSalesTransaction.m */,
+			);
+			name = Sales;
+			sourceTree = "<group>";
+		};
+		A16EF7F81485EF6600A90921 /* Ranks */ = {
+			isa = PBXGroup;
+			children = (
+				A16EF7FC1485EFCB00A90921 /* APRankData.h */,
+				A16EF7FD1485EFCB00A90921 /* APRankData.m */,
+			);
+			name = Ranks;
+			sourceTree = "<group>";
+		};
+		A16EF8011485F0B900A90921 /* Ranks */ = {
+			isa = PBXGroup;
+			children = (
+				A16EF8021485F0C900A90921 /* APRankTransaction.h */,
+				A16EF8031485F0C900A90921 /* APRankTransaction.m */,
+			);
+			name = Ranks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +388,32 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13F2C811484A7E600F71B2F /* APConstants.h in Headers */,
+				A13F2C861484A8B800F71B2F /* JSONKit.h in Headers */,
+				A13F2C8F1484AA2C00F71B2F /* APDateRange.h in Headers */,
+				A13F2C931484ADF000F71B2F /* APRequest.h in Headers */,
+				A13F2C9C1484BAA300F71B2F /* APSalesReport.h in Headers */,
+				A13F2CA11484BF8300F71B2F /* APProduct.h in Headers */,
+				A16EF7E51485900E00A90921 /* APSalesTransaction.h in Headers */,
+				A16EF7EB1485904700A90921 /* APTransaction.h in Headers */,
+				A16EF7F214859E1C00A90921 /* APAuthentication.h in Headers */,
+				A16EF7F61485EE0A00A90921 /* APRegionSalesReport.h in Headers */,
+				A16EF7FE1485EFCB00A90921 /* APRankData.h in Headers */,
+				A16EF8041485F0C900A90921 /* APRankTransaction.h in Headers */,
+				A162D279148B48DE003884B8 /* APReview.h in Headers */,
+				A162D27D148B4E89003884B8 /* APStoreRating.h in Headers */,
+				A162D282148B5193003884B8 /* APReviewTransaction.h in Headers */,
+				A162D287148B5B52003884B8 /* APiAdReport.h in Headers */,
+				A162D28C148B5CAB003884B8 /* APiAdTransaction.h in Headers */,
+				A11AB7EC148C8173009474B7 /* APArchive.h in Headers */,
+				A11AB7F1148C8347009474B7 /* APArchiveTransaction.h in Headers */,
+				A11AB7F6148C8807009474B7 /* APEvent.h in Headers */,
+				A11AB7FB148C89FC009474B7 /* APEventTransaction.h in Headers */,
+				A11AB804148C9214009474B7 /* APUser.h in Headers */,
+				A11AB808148C92BF009474B7 /* APAccount.h in Headers */,
+				A11AB80D148C9552009474B7 /* APUserTransaction.h in Headers */,
+				A11AB811148C963E009474B7 /* APExternalAccount.h in Headers */,
+				A11AB816148C9B3C009474B7 /* APExternalAccountTransaction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +468,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13F2C7A1484A7BD00F71B2F /* AppFiguresAPI.m in Sources */,
+				A13F2C871484A8B800F71B2F /* JSONKit.m in Sources */,
+				A13F2C901484AA2C00F71B2F /* APDateRange.m in Sources */,
+				A13F2C941484ADF000F71B2F /* APRequest.m in Sources */,
+				A13F2C9D1484BAA300F71B2F /* APSalesReport.m in Sources */,
+				A13F2CA21484BF8300F71B2F /* APProduct.m in Sources */,
+				A16EF7E61485900E00A90921 /* APSalesTransaction.m in Sources */,
+				A16EF7EC1485904700A90921 /* APTransaction.m in Sources */,
+				A16EF7F314859E1C00A90921 /* APAuthentication.m in Sources */,
+				A16EF7F71485EE0A00A90921 /* APRegionSalesReport.m in Sources */,
+				A16EF7FF1485EFCB00A90921 /* APRankData.m in Sources */,
+				A16EF8051485F0C900A90921 /* APRankTransaction.m in Sources */,
+				A162D27A148B48DE003884B8 /* APReview.m in Sources */,
+				A162D27E148B4E89003884B8 /* APStoreRating.m in Sources */,
+				A162D283148B5193003884B8 /* APReviewTransaction.m in Sources */,
+				A162D288148B5B52003884B8 /* APiAdReport.m in Sources */,
+				A162D28D148B5CAB003884B8 /* APiAdTransaction.m in Sources */,
+				A11AB7ED148C8173009474B7 /* APArchive.m in Sources */,
+				A11AB7F2148C8347009474B7 /* APArchiveTransaction.m in Sources */,
+				A11AB7F7148C8807009474B7 /* APEvent.m in Sources */,
+				A11AB7FC148C89FC009474B7 /* APEventTransaction.m in Sources */,
+				A11AB805148C9214009474B7 /* APUser.m in Sources */,
+				A11AB809148C92BF009474B7 /* APAccount.m in Sources */,
+				A11AB80E148C9552009474B7 /* APUserTransaction.m in Sources */,
+				A11AB812148C963E009474B7 /* APExternalAccount.m in Sources */,
+				A11AB817148C9B3C009474B7 /* APExternalAccountTransaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +584,7 @@
 				A13F2C7F1484A7BD00F71B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
