@@ -9,7 +9,6 @@
 #import "AppFiguresAPI.h"
 
 @implementation AppFiguresAPI
-@synthesize auth;
 
 + (AppFiguresAPI *)engine
 {

@@ -15,9 +15,6 @@
 @end
 
 @implementation APUser
-@synthesize data;
-@synthesize cachedAccount;
-@synthesize cachedProducts;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

@@ -13,7 +13,6 @@
 @end
 
 @implementation APiAdReport
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

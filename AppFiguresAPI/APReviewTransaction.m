@@ -13,12 +13,6 @@ NSString * const APFetchReviewsCountryMinor = @"minor";
 NSString * const APFetchReviewsCountryList = @"use_list";
 
 @implementation APReviewTransaction
-@synthesize productID;
-@synthesize countryFetchType;
-@synthesize countryList;
-@synthesize pageNumber;
-@synthesize language;
-@synthesize transactionCompleted;
 
 - (id)init
 {

@@ -9,8 +9,6 @@
 #import "APAuthentication.h"
 
 @implementation APAuthentication
-@synthesize username = _username;
-@synthesize password = _password;
 
 + (APAuthentication *)authWithUsername:(NSString *)username password:(NSString *)password
 {

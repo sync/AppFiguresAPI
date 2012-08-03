@@ -11,12 +11,6 @@
 #import "APConstants.h"
 
 @implementation APTransaction
-@synthesize URL = _URL;
-@synthesize connection;
-@synthesize request;
-@synthesize method = _method;
-@synthesize auth;
-@synthesize transactionFailed;
 
 + (APTransaction *)transactionWithURL:(NSURL *)URL method:(APHTTPMethod)method
 {

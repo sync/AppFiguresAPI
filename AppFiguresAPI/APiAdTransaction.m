@@ -9,10 +9,6 @@
 #import "APiAdTransaction.h"
 
 @implementation APiAdTransaction
-@synthesize type;
-@synthesize dateRange;
-@synthesize products;
-@synthesize transactionCompleted;
 
 - (id)init
 {

@@ -15,12 +15,6 @@ NSString * const APRankGranularityDaily = @"daily";
 NSString * const APRankGranularityHourly = @"hourly";
 
 @implementation APRankTransaction
-@synthesize products;
-@synthesize granularity;
-@synthesize dateRange;
-@synthesize countries;
-@synthesize filter;
-@synthesize transactionCompleted;
 
 - (id)init
 {

@@ -17,7 +17,6 @@ NSString * const APAccountPlanTypePublisher = @"publisher";
 @end
 
 @implementation APAccount
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

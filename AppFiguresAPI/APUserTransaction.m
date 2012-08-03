@@ -13,9 +13,6 @@ NSString * const APUserTransactionTypeProducts = @"products";
 NSString * const APUserTransactionTypeExternalAccounts = @"external_accounts";
 
 @implementation APUserTransaction
-@synthesize transactionCompleted;
-@synthesize transactionType;
-@synthesize email;
 
 - (void)beginTransaction
 {

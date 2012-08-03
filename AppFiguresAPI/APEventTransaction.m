@@ -14,12 +14,6 @@ NSString * const APEventTransactionTypeUpdate = @"PUT";
 NSString * const APEventTransactionTypeDelete = @"DELETE";
 
 @implementation APEventTransaction
-@synthesize transactionCompleted;
-@synthesize transactionType;
-@synthesize eventID;
-@synthesize caption;
-@synthesize date;
-@synthesize productIDs;
 
 - (void)beginTransactionWithType:(APEventTransactionType)type
 {
@@ -30,8 +24,8 @@ NSString * const APEventTransactionTypeDelete = @"DELETE";
 
 - (void)setTransactionType:(APEventTransactionType)newTransactionType
 {
-    transactionType = [newTransactionType copy];
-    self.request.method = transactionType;
+    _transactionType = [newTransactionType copy];
+    self.request.method = _transactionType;
 }
 
 - (void)commitTransaction
@@ -65,7 +59,7 @@ NSString * const APEventTransactionTypeDelete = @"DELETE";
         [_data setObject:self.productIDs forKey:@"products"];
         
         if ([self.transactionType isEqualToString:APEventTransactionTypeUpdate]) {
-            [_data setObject:[NSNumber numberWithUnsignedInteger:eventID] forKey:@"eventId"];
+            [_data setObject:[NSNumber numberWithUnsignedInteger:self.eventID] forKey:@"eventId"];
         }
         
         self.request.arguments = _data;

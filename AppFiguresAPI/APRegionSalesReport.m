@@ -13,7 +13,6 @@
 @end
 
 @implementation APRegionSalesReport
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

@@ -15,13 +15,6 @@ NSString * const APExternalAccountTransactionTypeUpdate = @"PUT";
 NSString * const APExternalAccountTransactionTypeDelete = @"DELETE";
 
 @implementation APExternalAccountTransaction
-@synthesize transactionCompleted;
-@synthesize transactionType;
-@synthesize accountID;
-@synthesize nickname;
-@synthesize auth;
-@synthesize autoImport;
-@synthesize type = _type;
 
 - (void)beginTransaction
 {

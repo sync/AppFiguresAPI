@@ -26,7 +26,6 @@ NSString * const APSalesDataSourceMonthly = @"monthly";
 @end
 
 @implementation APSalesReport
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

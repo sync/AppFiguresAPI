@@ -13,7 +13,6 @@
 @end
 
 @implementation APProduct
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

@@ -12,13 +12,6 @@
 #import "APConstants.h"
 
 @implementation APSalesTransaction
-@synthesize dataSource;
-@synthesize type;
-@synthesize dateRange;
-@synthesize products;
-@synthesize countryISO;
-@synthesize transactionFailed;
-@synthesize transactionCompleted;
 
 - (id)init
 {

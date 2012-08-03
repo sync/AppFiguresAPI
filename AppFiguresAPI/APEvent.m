@@ -13,7 +13,6 @@
 @end
 
 @implementation APEvent
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

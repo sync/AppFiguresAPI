@@ -9,8 +9,6 @@
 #import "APDateRange.h"
 
 @implementation APDateRange
-@synthesize from;
-@synthesize to;
 
 + (APDateRange *)dateRangeFrom:(NSDate *)from to:(NSDate *)to
 {

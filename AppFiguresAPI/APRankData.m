@@ -13,7 +13,6 @@
 @end
 
 @implementation APRankData
-@synthesize data;
 
 - (id)initWithResponse:(NSArray *)response
 {

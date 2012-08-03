@@ -19,14 +19,6 @@ NSString * const APHTTPMethodDelete = @"DELETE";
 @end
 
 @implementation APRequest
-@synthesize auth;
-@synthesize URL = _URL;
-@synthesize method = _method;
-@synthesize arguments;
-@synthesize connection;
-@synthesize data = _data;
-@synthesize delegate = _delegate;
-@synthesize response = _response;
 
 - (id)initWithURL:(NSURL *)URL method:(APHTTPMethod)method
 {

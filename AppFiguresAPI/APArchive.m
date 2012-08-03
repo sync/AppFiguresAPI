@@ -19,7 +19,6 @@ NSString * const APArchiveTypeAll = @"all";
 @end
 
 @implementation APArchive
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

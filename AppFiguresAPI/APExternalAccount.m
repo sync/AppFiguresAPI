@@ -17,7 +17,6 @@ NSString * const APExternalAccountTypeGoogleCheckout = @"google_checkout";
 @end
 
 @implementation APExternalAccount
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

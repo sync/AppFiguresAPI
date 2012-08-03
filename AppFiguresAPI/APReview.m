@@ -13,7 +13,6 @@
 @end
 
 @implementation APReview
-@synthesize data;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

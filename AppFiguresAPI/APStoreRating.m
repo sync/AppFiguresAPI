@@ -14,8 +14,6 @@
 @end
 
 @implementation APStoreRating
-@synthesize data;
-@synthesize cachedReviews;
 
 - (id)initWithResponse:(NSDictionary *)response
 {

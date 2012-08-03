@@ -14,11 +14,6 @@ NSString * const APArchiveTransactionTypeDate = @"date";
 NSString * const APArchiveTransactionTypeRaw = @"raw";
 
 @implementation APArchiveTransaction
-@synthesize transactionCompleted;
-@synthesize transactionType;
-@synthesize archiveID;
-@synthesize archiveType;
-@synthesize date;
 
 - (id)init
 {
