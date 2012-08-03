@@ -8,7 +8,6 @@
 
 #import "APRequest.h"
 #import "APConstants.h"
-#import "JSONKit.h"
 
 NSString * const APHTTPMethodGet = @"GET";
 NSString * const APHTTPMethodPost = @"POST";
@@ -27,7 +26,7 @@ NSString * const APHTTPMethodDelete = @"DELETE";
 @synthesize connection;
 @synthesize data = _data;
 @synthesize delegate = _delegate;
-@synthesize response;
+@synthesize response = _response;
 
 - (id)initWithURL:(NSURL *)URL method:(APHTTPMethod)method
 {
@@ -65,7 +64,7 @@ NSString * const APHTTPMethodDelete = @"DELETE";
     if ([uppercaseMethod isEqualToString:APHTTPMethodPost] ||
         [uppercaseMethod isEqualToString:APHTTPMethodPut]) {
         
-        [_request setHTTPBody:[self.arguments JSONDataWithOptions:JKSerializeOptionEscapeUnicode error:nil]];
+        [_request setHTTPBody:[NSJSONSerialization dataWithJSONObject:self.arguments options:kNilOptions error:nil]];
     }
     
     self.connection = [[NSURLConnection alloc] initWithRequest:_request delegate:self];
@@ -104,7 +103,7 @@ NSString * const APHTTPMethodDelete = @"DELETE";
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    self.response = response;
+    self.response = (NSHTTPURLResponse *)response;
     if (!self.data) {
         self.data = [[NSMutableData alloc] init];
     } else {
@@ -119,8 +118,7 @@ NSString * const APHTTPMethodDelete = @"DELETE";
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    JSONDecoder *decoder = [JSONDecoder decoder];
-    NSDictionary *results = [decoder objectWithData:self.data];
+    NSDictionary *results = [NSJSONSerialization JSONObjectWithData:self.data options:kNilOptions error:nil];
     
     if (_flags.respondsToComplete) {
         [self.delegate request:self didCompleteWithResults:results];

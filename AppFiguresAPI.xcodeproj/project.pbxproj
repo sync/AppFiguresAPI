@@ -24,8 +24,6 @@
 		A13F2C741484A7BD00F71B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F2C731484A7BD00F71B2F /* Foundation.framework */; };
 		A13F2C7A1484A7BD00F71B2F /* AppFiguresAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C791484A7BD00F71B2F /* AppFiguresAPI.m */; };
 		A13F2C811484A7E600F71B2F /* APConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C801484A7E600F71B2F /* APConstants.h */; };
-		A13F2C861484A8B800F71B2F /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C841484A8B800F71B2F /* JSONKit.h */; };
-		A13F2C871484A8B800F71B2F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C851484A8B800F71B2F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A13F2C8F1484AA2C00F71B2F /* APDateRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C8D1484AA2C00F71B2F /* APDateRange.h */; };
 		A13F2C901484AA2C00F71B2F /* APDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A13F2C8E1484AA2C00F71B2F /* APDateRange.m */; };
 		A13F2C931484ADF000F71B2F /* APRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A13F2C911484ADF000F71B2F /* APRequest.h */; };
@@ -83,8 +81,6 @@
 		A13F2C781484A7BD00F71B2F /* AppFiguresAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFiguresAPI.h; sourceTree = "<group>"; };
 		A13F2C791484A7BD00F71B2F /* AppFiguresAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFiguresAPI.m; sourceTree = "<group>"; };
 		A13F2C801484A7E600F71B2F /* APConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APConstants.h; sourceTree = "<group>"; };
-		A13F2C841484A8B800F71B2F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = lib/JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
-		A13F2C851484A8B800F71B2F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = lib/JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
 		A13F2C8D1484AA2C00F71B2F /* APDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDateRange.h; sourceTree = "<group>"; };
 		A13F2C8E1484AA2C00F71B2F /* APDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDateRange.m; sourceTree = "<group>"; };
 		A13F2C911484ADF000F71B2F /* APRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRequest.h; sourceTree = "<group>"; };
@@ -260,22 +256,12 @@
 		A13F2C821484A84200F71B2F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A13F2C831484A8B000F71B2F /* JSONKit */,
 				A13F2C911484ADF000F71B2F /* APRequest.h */,
 				A13F2C921484ADF000F71B2F /* APRequest.m */,
 				A16EF7F014859E1C00A90921 /* APAuthentication.h */,
 				A16EF7F114859E1C00A90921 /* APAuthentication.m */,
 			);
 			name = Networking;
-			sourceTree = "<group>";
-		};
-		A13F2C831484A8B000F71B2F /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				A13F2C841484A8B800F71B2F /* JSONKit.h */,
-				A13F2C851484A8B800F71B2F /* JSONKit.m */,
-			);
-			name = JSONKit;
 			sourceTree = "<group>";
 		};
 		A13F2C991484BA9100F71B2F /* Sales */ = {
@@ -389,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13F2C811484A7E600F71B2F /* APConstants.h in Headers */,
-				A13F2C861484A8B800F71B2F /* JSONKit.h in Headers */,
 				A13F2C8F1484AA2C00F71B2F /* APDateRange.h in Headers */,
 				A13F2C931484ADF000F71B2F /* APRequest.h in Headers */,
 				A13F2C9C1484BAA300F71B2F /* APSalesReport.h in Headers */,
@@ -468,7 +453,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13F2C7A1484A7BD00F71B2F /* AppFiguresAPI.m in Sources */,
-				A13F2C871484A8B800F71B2F /* JSONKit.m in Sources */,
 				A13F2C901484AA2C00F71B2F /* APDateRange.m in Sources */,
 				A13F2C941484ADF000F71B2F /* APRequest.m in Sources */,
 				A13F2C9D1484BAA300F71B2F /* APSalesReport.m in Sources */,
