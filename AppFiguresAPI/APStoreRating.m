@@ -53,9 +53,9 @@
     return [[self.data objectForKey:@"all_stars"] unsignedIntegerValue];
 }
 
-- (NSUInteger)numberOfStars
+- (float)averageRating
 {
-    return [[self.data objectForKey:@"stars"] unsignedIntegerValue];
+    return [[self.data objectForKey:@"stars"] floatValue];
 }
 
 - (NSUInteger)numberOfPages
